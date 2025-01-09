@@ -31,7 +31,6 @@ scikit-optimize
 scipy
 simplegeneric
 six
-scikit-learn
 tornado
 traitlets
 wcwidth
