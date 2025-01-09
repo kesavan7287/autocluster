@@ -1,3 +1,7 @@
+## Disclaimer
+This is not my library, I have imported it to remove any references to sklearn (as it has been depriciated since Dec 2023). 
+Original library is at [autocluster](https://github.com/wywongbd/autocluster.git).
+
 ## autocluster
 ``autocluster`` is an automated machine learning (AutoML) toolkit for performing clustering tasks.   
 
