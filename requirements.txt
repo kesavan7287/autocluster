@@ -26,7 +26,7 @@ pyparsing
 python-dateutil
 pytz
 pyzmq
-scikit-learn
+scikit-learn==1.1.1
 scikit-optimize
 scipy
 simplegeneric
