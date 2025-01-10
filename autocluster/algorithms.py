@@ -74,7 +74,7 @@ class algorithms(object):
         _name = "KMeans"
         _model = cluster.KMeans
         _params = [
-            UniformIntegerHyperparameter("n_clusters", 1, 80, default_value=5)
+            UniformIntegerHyperparameter("n_clusters", 2, 80, default_value=5)
             # UniformIntegerHyperparameter("random_state", 0, 9, default_value=0)
         ]
         _params_names = set([p.name for p in _params]) 
@@ -86,7 +86,7 @@ class algorithms(object):
         _name = "MiniBatchKMeans"
         _model = cluster.MiniBatchKMeans
         _params = [
-            UniformIntegerHyperparameter("n_clusters", 1, 80, default_value=10),
+            UniformIntegerHyperparameter("n_clusters", 2, 80, default_value=10),
             UniformIntegerHyperparameter("batch_size", 10, 1000, default_value=100),
             # UniformIntegerHyperparameter("random_state", 0, 9, default_value=0)
         ]
@@ -127,7 +127,7 @@ class algorithms(object):
         _name = "SpectralClustering"
         _model = cluster.SpectralClustering
         _params = [
-            UniformIntegerHyperparameter("n_clusters", 1, 80, default_value=10),
+            UniformIntegerHyperparameter("n_clusters", 2, 80, default_value=10),
             
             # None and 'lobpcg' were excluded from eigne_solver's list of possible values
             CategoricalHyperparameter("eigen_solver", ['arpack'], default_value='arpack'),
